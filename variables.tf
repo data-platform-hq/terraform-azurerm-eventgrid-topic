@@ -22,3 +22,8 @@ variable "resource_group" {
   type        = string
   description = "Resource group name"
 }
+
+variable "name" {
+  type        = string
+  description = "Event Grid Topic name"
+}
