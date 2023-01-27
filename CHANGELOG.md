@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-eventgrid-topic/compare/v1.0.0...v1.1.0) (2023-01-27)
+
+
+### Bug Fixes
+
+* updated provider version ([fd3e1c5](https://github.com/data-platform-hq/terraform-azurerm-eventgrid-topic/commit/fd3e1c5b555521c859da994e1d36ad94a9c88d55))
+
+
+### Features
+
+* added opportunity to enable Diagnostic setting ([7f88426](https://github.com/data-platform-hq/terraform-azurerm-eventgrid-topic/commit/7f884260476e4aff522572f36021c02d90d3ee12))
+
 # 1.0.0 (2022-11-07)
 
 
