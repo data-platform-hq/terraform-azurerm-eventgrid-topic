@@ -23,19 +23,23 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [azurerm_eventgrid_topic.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/eventgrid_topic) | resource |
+| Name                                                                                                                                                  | Type       |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| [azurerm_eventgrid_topic.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/eventgrid_topic)                       | resource   |
+| [azurerm_monitor_diagnostic_setting.this](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/monitor_diagnostic_setting) | resource   |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_env"></a> [env](#input\_env) | Environment | `string` | n/a | yes |
-| <a name="input_location"></a> [location](#input\_location) | Location | `string` | n/a | yes |
-| <a name="input_project"></a> [project](#input\_project) | Project name | `string` | n/a | yes |
-| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group) | Resource group name | `string` | n/a | yes |
-| <a name="input_tags"></a> [tags](#input\_tags) | Tags | `map(string)` | n/a | yes |
+| Name                                                                                                                 | Description                                                            | Type           | Default     | Required |
+|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|----------------|-------------|:--------:|
+| <a name="input_env"></a> [env](#input\_env)                                                                          | Environment                                                            | `string`       | n/a         |   yes    |
+| <a name="input_location"></a> [location](#input\_location)                                                           | Location                                                               | `string`       | n/a         |   yes    |
+| <a name="input_project"></a> [project](#input\_project)                                                              | Project name                                                           | `string`       | n/a         |   yes    |
+| <a name="input_resource_group"></a> [resource\_group](#input\_resource\_group)                                       | Resource group name                                                    | `string`       | n/a         |   yes    |
+| <a name="input_tags"></a> [tags](#input\_tags)                                                                       | Tags                                                                   | `map(string)`  | n/a         |   yes    |
+| <a name="input_analytics_workspace_id"></a> [analytics\_workspace\_id](#input\_analytics\_workspace\_id)             | Resource ID of Log Analytics workspace                                 | `string`       | `null`      |    no    |
+| <a name="input_analytics_destination_type"></a> [analytics\_destination\_type](#input\_analytics\_destination\_type) | Possible values are AzureDiagnostics and Dedicated.                    | `string`       | `Dedicated` |    no    |
+| <a name="input_enable_diagnostic_setting"></a> [enable\_diagnostic\_setting](#input\_enable\_diagnostic\_setting)    | Enable diagnostic setting. var.analytics_workspace_id must be provided | `bool`         | `false`     |    no    |
 
 ## Outputs
 
